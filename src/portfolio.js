@@ -30,7 +30,7 @@ const greeting = {
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
-// Social Media Links
+// Social Media Linkss
 
 const socialMediaLinks = {
   github: "https://github.com/saadpasta",
