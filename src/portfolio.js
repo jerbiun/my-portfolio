@@ -89,8 +89,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "laravel",
+      fontAwesomeClassname: "fab fa-php"
+    },
+    {
+      skillName: "vuejs",
+      fontAwesomeClassname: "fab fa-vue"
     },
     {
       skillName: "npm",
@@ -101,12 +105,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "postgres",
+      fontAwesomeClassname: "fab fa-database"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "reactnative",
+      fontAwesomeClassname: "fas fa-mobile-alt"
     },
     {
       skillName: "python",
@@ -126,23 +130,20 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
+      schoolName: "ISIMM - Higher Institute of Computer Science and Mathematics",
       logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      subHeader: "Professional Master's Degree in Software Engineering",
+      duration: "September 2010 - April 2012",
+      desc: "Project with spring core for heatlh care",
+      
     },
     {
-      schoolName: "Stanford University",
+      schoolName: "ISIMM - Higher Institute of Computer Science and Mathematics",
       logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      subHeader: "Applied Bachelor's Degree in Computer Systems and Programming",
+      duration: "September 2007 - April 2010",
+      desc: "Project with VB.net for a doctor",
+       
     }
   ]
 };
@@ -164,6 +165,16 @@ const techStack = {
       Stack: "Programming",
       progressPercentage: "80%"
     }
+    ,
+    {
+      Stack: "Mobile Development",
+      progressPercentage: "80%"
+    }
+    ,
+    {
+      Stack: "Desktop Development",
+      progressPercentage: "60%"
+    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -174,29 +185,33 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Software Engineer - Tech lead and web developer",
+      company: "OTospex Solutions",
+      companylogo:  require("./assets/images/otospex_logo.png"),
+      date: "June 2023 – Present",
+      desc: "Tech lead and web developer",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "As a Tech Lead, I manage and oversee various complex projects, including a spare parts multi-tenancy ERP system,", 
+        "an ERP POS system with both mobile and desktop applications, and a travel agency booking system. My role involves ",   
+        "coordinating development teams, ensuring the delivery of high-quality software solutions, and driving innovation ",
+        "across multiple platforms to meet client needs.",
+        "Tech : Laravel , NodeJs , Python, ReactJs, VueJs , ReactNative, Postgres, React native for windows",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Wordpress / Laravel Expert",
+      company: "Segmalog",
+      companylogo: require("./assets/images/segma.jpg"),
+      date: "May 2016 – May 2021",
+      desc: "I'm also an expert in WordPress WooCommerce, Laravel eCommerce platforms, and SEO optimization, ensuring that online stores are not only functional but also optimized for search engines to maximize visibility and performance."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "IT Trainer",
+      company: "CPFPH",
+      companylogo: require("./assets/images/logo.png"),
+      date: "Jan 2021 – Sep 2022",
+      desc: "I am an IT trainer specializing in web technologies, with a strong background in educating and mentoring others in various aspects of web development and digital technologies"
     }
   ]
 };
@@ -343,7 +358,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,14 +371,16 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
+  podcast: [
+    "https://www.canva.com/design/DAGPH1nDW-Y/xPxMmvokcymgedKcUdeuVQ/edit?utm_content=DAGPH1nDW-Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+  ],
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
@@ -372,8 +389,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+216-56 848 856",
+  email_address: "jerbiun@gmail.com"
 };
 
 // Twitter Section
